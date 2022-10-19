@@ -31,8 +31,6 @@ secondEl.addEventListener("click", () => {
 /* Task 2 */
 addImg.addEventListener("click", () => {
   imgButton.style.display = "block";
-  scale = 1;
-  image.style.transform = `scale(${scale})`; 
 });
 
 enlargeImg.addEventListener('click', () => {
@@ -51,4 +49,6 @@ reduceImg.addEventListener('click', () => {
 
 removeImg.addEventListener("click", () => {
   imgButton.style.display = "none";
+  scale = 1;
+  image.style.transform = `scale(${scale})`;
 });
