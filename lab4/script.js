@@ -11,6 +11,7 @@ const imgButton = document.querySelector(".img-button");
 const image = document.querySelector(".image");
 
 let scale = 1;
+let controlSize = false;
 
 /* Task 1 */
 const changeColor = (el, change) => {
@@ -31,17 +32,18 @@ secondEl.addEventListener("click", () => {
 /* Task 2 */
 addImg.addEventListener("click", () => {
   imgButton.style.display = "block";
+  controlSize = true;
 });
 
 enlargeImg.addEventListener('click', () => {
-  if(scale < 1.5) {
+  if(controlSize && scale < 1.5) {
     scale += 0.1;
     image.style.transform = `scale(${scale})`
   }
 });
 
 reduceImg.addEventListener('click', () => {
-  if(scale > 0.75) {
+  if(controlSize && scale > 0.75) {
     scale -= 0.1;
     image.style.transform = `scale(${scale})`
   }
@@ -51,4 +53,5 @@ removeImg.addEventListener("click", () => {
   imgButton.style.display = "none";
   scale = 1;
   image.style.transform = `scale(${scale})`;
+  controlSize = false;
 });
