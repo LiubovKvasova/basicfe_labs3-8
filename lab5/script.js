@@ -98,6 +98,6 @@ myelement.onmouseover = () => {
 myelement.onmouseup = () => {
   click(myelement);
 }
-myelement.doubleclick = () => {
+myelement.ondblclick = () => {
   doubleclick();
 }
