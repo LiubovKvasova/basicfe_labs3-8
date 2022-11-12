@@ -25,6 +25,7 @@ body {
 
 .users {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 3rem 5rem;
 }
