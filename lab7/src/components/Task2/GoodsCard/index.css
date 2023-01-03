@@ -1,0 +1,12 @@
+.goods-card {
+  border: 1px solid #a9b8ba;
+  border-radius: 5px;
+  width: 250px;
+  padding: 20px;
+}
+
+.goods-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
